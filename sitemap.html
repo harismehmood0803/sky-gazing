@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap - Sky Gazing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* =========================================================
+       🗺️ SITEMAP PAGE STYLES (FIXED & MATCHING)
+    ========================================================= */
+
+    .sitemap-page {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .sitemap-page h2 {
+      color: #ff7e5f;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 12px rgba(255, 126, 95, 0.6);
+    }
+
+    .sitemap-page p {
+      color: #d0d0ff;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      line-height: 1.7;
+    }
+
+    .sitemap-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 2.5rem;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+      text-align: left;
+    }
+
+    .sitemap-container h3 {
+      color: #feb47b;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .sitemap-container ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sitemap-container li {
+      background: rgba(255, 255, 255, 0.03);
+      margin-bottom: 0.7rem;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .sitemap-container li:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateX(5px);
+    }
+
+    .sitemap-container li::before {
+      content: "✨";
+      margin-right: 0.5rem;
+      color: #ff7e5f;
+    }
+
+    .sitemap-container a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .sitemap-container a:hover {
+      color: #ff7e5f;
+    }
+
+    .flowchart ul {
+      list-style: none;
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .flowchart ul li {
+      background: rgba(255, 255, 255, 0.02);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.4rem;
+      color: #d0d0ff;
+    }
+
+    @media (max-width: 768px) {
+      .sitemap-container {
+        padding: 1.8rem;
+      }
+
+      .sitemap-page h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars-background" id="stars-container"></div>
+
+  <header>
+    <div class="logo">Sky Gazing</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="sky gazing.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html" class="active">Sitemap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ FIX: Added sitemap-page and sitemap-container wrappers -->
+  <section class="sitemap-page">
+    <h2>Website Sitemap</h2>
+    <p>Navigate through our cosmic content easily! Here's an overview of all the major sections and their connections.
+    </p>
+
+    <div class="sitemap-container">
+      <h3>📂 Main Sections</h3>
+      <ul>
+        <li><a href="index.html#home">🏠 Home</a></li>
+        <li><a href="index.html#gallery">🖼️ Gallery</a></li>
+        <li><a href="index.html#videos">🎥 Videos</a></li>
+        <li><a href="index.html#features">✨ Features</a></li>
+        <li><a href="index.html#simulator">🌌 Sky Simulator</a></li>
+        <li><a href="index.html#events">🌠 Events</a></li>
+      </ul>
+
+      <h3>📞 Support Pages</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+
+      <h3>📍 Address & Info</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> info@skygazing.com</p>
+      <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+
+      <h3>🔄 Flow of Website</h3>
+      <div class="flowchart">
+        <ul>
+          <li>Home
+            <ul>
+              <li>Gallery → (Milky Way, Lunar Surface, Nebula...)</li>
+              <li>Videos → (Solar System, Hubble, Black Holes)</li>
+              <li>Features → (Moon Phases, Constellations, Calendar)</li>
+              <li>Simulator → (Interactive Night Sky)</li>
+              <li>Events → (Meteor Showers, Eclipses, etc.)</li>
+            </ul>
+          </li>
+          <li>About Us → Mission & Socials</li>
+          <li>Contact → Feedback Form</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sky Gazing | Designed with ☄️ by Space Enthusiasts</p>
+  </footer>
+
+  <script>
+    const starsContainer = document.getElementById('stars-container');
+    for (let i = 0; i < 150; i++) {
+      const s = document.createElement('div');
+      s.classList.add('star');
+      s.style.left = Math.random() * 100 + '%';
+      s.style.top = Math.random() * 100 + '%';
+      s.style.width = s.style.height = Math.random() * 2 + 'px';
+      starsContainer.appendChild(s);
+    }
+  </script>
+</body>
+
+</html>

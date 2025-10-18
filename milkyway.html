@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .event-card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .event-card p {
+            padding: 0 10px 15px;
+            font-size: 0.95em;
+            color: white;
+        }
+
+        .events h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 50px;
+            color: #fff;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 126, 95, 0.5);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sky Gazing</div>
+        <p class="tagline">Discover the wonders of the night sky</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="sky gazing.html#gallery">Home / Milky Way</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="events"><br><br>
+        <h2>Milky Way Galaxy</h2>
+        <div class="event-list">
+            <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                <img src="MILKY WAY/milkyway2.jpg" alt="Perseid Meteor Shower">
+                <h3>🌌 Our Home Galaxy</h3>
+                <p>The Milky Way is the galaxy that contains our Solar System, including Earth.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('may').showModal();">
+                <img src="MILKY WAY/milkyway3.jpg" alt="Partial Lunar Eclipse">
+                <h3>⭐ Hundreds of Billions of Stars</h3>
+                <p>It’s estimated to have 100–400 billion stars and possibly just as many planets.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('june').showModal();">
+                <img src="MILKY WAY/milkyway4.jpg" alt="Jupiter at Opposition">
+                <h3>💫 Spiral Shape</h3>
+                <p>The Milky Way is a barred spiral galaxy, with a central bar-shaped structure and several spiral arms.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="event-list">
+            <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                <img src="MILKY WAY/milkyway5.jpg" alt="Perseid Meteor Shower">
+                <h3>🌍 Location of the Solar System</h3>
+                <p>Our Solar System lies in the Orion Arm, about 27,000 light-years from the galactic center.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('may').showModal();">
+                <img src="MILKY WAY/milkyway6.jpg" alt="Partial Lunar Eclipse">
+                <h3>🌀 Size</h3>
+                <p>The galaxy spans about 100,000 light-years in diameter.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('june').showModal();">
+                <img src="MILKY WAY/milkyway7.webp" alt="Jupiter at Opposition">
+                <h3>⚫ Supermassive Black Hole</h3>
+                <p>At its center is a supermassive black hole called Sagittarius A*.</p>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="event-list">
+            <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                <img src="MILKY WAY/milkyway8.webp" alt="Perseid Meteor Shower">
+                <h3>🌠 Rotational Motion</h3>
+                <p>The Milky Way rotates; it takes the Solar System roughly 225–250 million years to make one orbit
+                    around the galactic center.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('may').showModal();">
+                <img src="MILKY WAY/milkyway9.webp" alt="Partial Lunar Eclipse">
+                <h3>🌃 Part of the Local Group</h3>
+                <p>It belongs to a small cluster of galaxies called the Local Group, which includes Andromeda and the
+                    Triangulum Galaxy.</p>
+            </div>
+
+            <div class="event-card" onclick="document.getElementById('june').showModal();">
+                <img src="MILKY WAY/milkyway10.webp" alt="Jupiter at Opposition">
+                <h3>🔭 Visible Band of Light</h3>
+                <p>When viewed from Earth, the Milky Way appears as a milky band of light across the night sky, made up
+                    of billions of distant stars.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

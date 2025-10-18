@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .event-card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .event-date {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .event-card p {
+            padding: 0 10px 15px;
+            font-size: 0.95em;
+            color: white;
+        }
+
+        .events h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 50px;
+            color: #fff;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 126, 95, 0.5);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sky Gazing</div>
+        <p class="tagline">Discover the wonders of the night sky</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="sky gazing.html#gallery">Home / Solar Eclipse</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <section class="events"><br><br>
+            <h2>Solar Eclipse</h2>
+            <div class="event-list">
+                <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                    <img src="solar eclips/eclips2.webp" alt="Perseid Meteor Shower">
+                    <h3>☀️ Definition</h3>
+                    <p>A solar eclipse happens when the Moon moves between the Earth and the Sun, blocking sunlight from
+                        reaching Earth.</p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('may').showModal();">
+                    <img src="solar eclips/eclips3.jpg" alt="Partial Lunar Eclipse">
+                    <h3>🌍 Alignment</h3>
+                    <p>It occurs only when the Sun, Moon, and Earth are perfectly aligned in a straight line.</p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('june').showModal();">
+                    <img src="solar eclips/eclips4.webp" alt="Jupiter at Opposition">
+                    <h3>🌑 Types</h3>
+                    <p>There are three main types of solar eclipses — total, partial, and annular.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="event-list">
+                <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                    <img src="solar eclips/eclips5.jpg" alt="Perseid Meteor Shower">
+                    <h3>🌕 Total Solar Eclipse</h3>
+                    <p>In a total eclipse, the Moon completely covers the Sun, and the day briefly becomes dark.
+                    </p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('may').showModal();">
+                    <img src="solar eclips/eclips6.jpg" alt="Partial Lunar Eclipse">
+                    <h3>🌗 Partial Solar Eclipse</h3>
+                    <p>In a partial eclipse, only part of the Sun is covered by the Moon.</p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('june').showModal();">
+                    <img src="solar eclips/eclips7.webp" alt="Jupiter at Opposition">
+                    <h3>🌘 Annular Solar Eclipse</h3>
+                    <p>In this type, the Moon is farther from Earth, so it looks smaller and leaves a “ring of fire”
+                        around
+                        the Sun.</p>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="event-list">
+                <div class="event-card" onclick="document.getElementById('aug').showModal();">
+                    <img src="solar eclips/eclips8.webp" alt="Perseid Meteor Shower">
+                    <h3>🕶️ Safety</h3>
+                    <p>It is dangerous to look directly at a solar eclipse without special eclipse glasses, as it can
+                        harm
+                        your eyes.</p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('may').showModal();">
+                    <img src="solar eclips/eclips9.png" alt="Partial Lunar Eclipse">
+                    <h3>📅 Frequency</h3>
+                    <p>Solar eclipses happen at least twice a year, but total eclipses are rare at any single location.
+                    </p>
+                </div>
+
+                <div class="event-card" onclick="document.getElementById('june').showModal();">
+                    <img src="solar eclips/eclips10.jpg" alt="Jupiter at Opposition">
+                    <h3>🔭 Scientific Importance</h3>
+                    <p>Eclipses help scientists study the Sun’s corona and understand more about the Earth–Moon–Sun
+                        system.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

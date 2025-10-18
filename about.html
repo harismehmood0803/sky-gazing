@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Sky Gazing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="modal.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+/* =========================================================
+   🪐 ABOUT PAGE STYLES
+   ========================================================= */
+
+.about-page {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+/* ---- Heading and Intro ---- */
+.about-page h2 {
+  color: #ff7e5f;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(255, 126, 95, 0.5);
+}
+
+.about-page p {
+  color: #d0d0ff;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* ---- Mission ---- */
+.mission-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  margin: 2rem auto;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  max-width: 800px;
+}
+
+.mission-section h3 {
+  color: #ff7e5f;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.mission-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-section li {
+  color: #d0d0ff;
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+/* ---- Contact Info ---- */
+.contact-info {
+  margin-top: 3rem;
+  color: #d0d0ff;
+}
+
+.contact-info i {
+  color: #ff7e5f;
+  margin-right: 8px;
+}
+
+.contact-info a {
+  color: #ff7e5f;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Social Links ---- */
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff7e5f;
+  transform: scale(1.2);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .about-page h2 {
+    font-size: 2rem;
+  }
+
+  .mission-section {
+    padding: 1.8rem;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="stars-background" id="stars-container"></div>
+
+  <header>
+    <div class="logo">Sky Gazing</div>
+    <nav>
+      <ul class="nav-links">
+       <li><a href="sky gazing.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-page">
+    <h2>About Sky Gazing</h2>
+    <p>
+      Founded in 2025, <strong>Sky Gazing</strong> is a platform dedicated to
+      making astronomy accessible and enjoyable for everyone. From moon phases
+      to celestial events, we aim to bring the universe closer to Earthlings.
+    </p>
+
+    <div class="mission-section">
+      <h3>Our Mission</h3>
+      <ul>
+        <li>🌠 Inspire curiosity about the cosmos</li>
+        <li>🪐 Provide accurate and educational astronomy content</li>
+        <li>🌍 Connect stargazers worldwide</li>
+      </ul>
+    </div>
+
+    <div class="contact-info">
+      <h3>Connect With Us</h3>
+      <p><i class="fas fa-envelope"></i>Email: <a href="mailto:info@skygazing.com">info@skygazing.com</a></p>
+      <p><i class="fas fa-phone"></i>Phone: +92 300 1234567</p>
+
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sky Gazing | <a href="sitemap.html">Sitemap</a></p>
+  </footer>
+
+  <script>
+    // Star background animation
+    const starsContainer = document.getElementById("stars-container");
+    for (let i = 0; i < 150; i++) {
+      const s = document.createElement("div");
+      s.classList.add("star");
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = Math.random() * 2 + "px";
+      starsContainer.appendChild(s);
+    }
+  </script>
+</body>
+</html>

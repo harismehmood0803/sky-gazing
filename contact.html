@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sky Gazing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* =========================================================
+   📞 CONTACT PAGE STYLES
+   ========================================================= */
+
+        .contact-page {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .contact-page h2 {
+            text-align: center;
+            color: #ff7e5f;
+            margin-bottom: 2rem;
+            font-size: 2.3rem;
+            text-shadow: 0 0 10px rgba(255, 126, 95, 0.5);
+        }
+
+        .contact-page p {
+            color: #d0d0ff;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* ---- Contact Form ---- */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.9rem;
+            margin-bottom: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid #ff7e5f;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 10px rgba(255, 126, 95, 0.3);
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            border: none;
+            padding: 1rem;
+            color: white;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(255, 126, 95, 0.3);
+        }
+
+        /* ---- Contact Info (optional) ---- */
+        .contact-info {
+            margin-top: 3rem;
+            color: #d0d0ff;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #ff7e5f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #feb47b;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .contact-page h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars-background" id="stars-container"></div>
+
+    <header>
+        <div class="logo">Sky Gazing</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="sky gazing.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container contact-section">
+        <div style="margin-bottom: 20px;">
+            <h2 style="text-align: center; font-size: 2rem;">Contact Us</h2>
+            <p style="text-align: center;">Have questions or suggestions? Reach out to us using the form below, and
+                we'll
+                get back to you soon!</p>
+        </div>
+
+        <form class="contact-form" onsubmit="return validateForm()">
+            <label><i class="fas fa-user"></i> Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label><i class="fas fa-phone"></i> Contact Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label><i class="fas fa-comment"></i> Message:</label>
+            <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Sky Gazing | <a href="sitemap.html">Sitemap</a></p>
+    </footer>
+
+    <script>
+        // Star background
+        const starsContainer = document.getElementById('stars-container');
+        for (let i = 0; i < 150; i++) {
+            const s = document.createElement('div');
+            s.classList.add('star');
+            s.style.left = Math.random() * 100 + '%';
+            s.style.top = Math.random() * 100 + '%';
+            s.style.width = s.style.height = Math.random() * 2 + 'px';
+            starsContainer.appendChild(s);
+        }
+
+        function validateForm() {
+            alert("Thank you! Your message has been sent successfully.");
+            return false; // prevent actual submission for demo
+        }
+    </script>
+</body>
+
+</html>

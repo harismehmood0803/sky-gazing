@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Gazing - Explore the Universe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <div class="stars-background" id="stars-container"></div>
+
+    <header>
+        <div class="logo">Sky Gazing</div>
+        <p class="tagline">Discover the wonders of the night sky</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#simulator">Sky Simulator</a></li>
+                <li><a href="#events">Celestial Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h2>Explore the Universe From Your Backyard</h2>
+            <p>Sky Gazing is your guide to understanding and appreciating the celestial wonders above. Whether you're a
+                beginner or an experienced astronomer, we have resources to enhance your stargazing experience.</p>
+            <a href="https://theskylive.com/planetarium" target="_blank" class="btn">Explore Now</a>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>Astronomy Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="milkyway.html"><img src="milkyway1.avif"
+                            alt="Panoramic view of the Milky Way galaxy stretching across a dark night sky"></a>
+                    <div class="gallery-caption">
+                        <h3>The Milky Way</h3>
+                        <p>Our home galaxy as seen from Earth</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="lunar-surface.html"> <img src="lunar.jpg"
+                            alt="Full moon with detailed craters and surface features visible against a dark sky"></a>
+                    <div class="gallery-caption">
+                        <h3>Lunar Surface</h3>
+                        <p>Detailed view of the Moon's craters</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="orion-nebula.html"> <img src="orion.webp"
+                            alt="Colorful Orion Nebula with glowing gas clouds and star formation"></a>
+                    <div class="gallery-caption">
+                        <h3>Orion Nebula</h3>
+                        <p>A stellar nursery in our galaxy</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="aurora-borialis.html"><img src="Aurora.webp"
+                            alt="Aurora Borealis with green and purple lights dancing across a starry night sky"></a>
+                    <div class="gallery-caption">
+                        <h3>Aurora Borealis</h3>
+                        <p>Northern lights display</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="solar-system.html"><img src="system.webp"
+                            alt="Artistic representation of our solar system with planets orbiting the sun"></a>
+                    <div class="gallery-caption">
+                        <h3>Solar System</h3>
+                        <p>Our planetary neighborhood</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="solar-eclips.html"><img src="eclips.jpg"
+                            alt="Total solar eclipse with the sun's corona visible around the dark moon"></a>
+                    <div class="gallery-caption">
+                        <h3>Solar Eclipse</h3>
+                        <p>Rare celestial alignment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section" id="videos">
+            <h2>Astronomy Videos</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/0rHUDWjR5gg" title="Introduction to the Solar System"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Solar System Exploration</h3>
+                        <p>Journey through our cosmic neighborhood and learn about the planets, moons, and other
+                            celestial bodies.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/PIhfS6Q0_qI?si=u7NICQ1ER_ajAGUS"
+                            title="Hubble Space Telescope Discoveries"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Hubble's Greatest Hits</h3>
+                        <p>Explore the most breathtaking images and discoveries from the Hubble Space Telescope.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-player">
+                        <iframe src="https://www.youtube.com/embed/kOEDG3j1bjs?si=vr0KfxaWG85mo0ja"
+                            title="Understanding Black Holes"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Mysteries of Black Holes</h3>
+                        <p>Dive into the fascinating science behind these mysterious cosmic phenomena.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 style="margin-bottom: 2rem; text-align: center; font-size: 2.2rem;" id="features">Some More Features</h2>
+        <section class="features ">
+            <a onclick="document.getElementById('dialog').showModal();" style="cursor: pointer;">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Moon Phases</h3>
+                    <p>Track lunar cycles and learn how the moon's phases affect stargazing conditions and astronomical
+                        observations.</p>
+                </div>
+            </a>
+            <a onclick="document.getElementById('dialog-1').showModal();" style="cursor: pointer;">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Constellation Guide</h3>
+                    <p>Identify constellations, stars, and deep-sky objects with our interactive star charts and guides.
+                    </p>
+                </div>
+            </a>
+            <a onclick="document.getElementById('dialog-2').showModal();" style="cursor: pointer;">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Event Calendar</h3>
+                    <p>Never miss meteor showers, eclipses, planet alignments, and other celestial events with our
+                        calendar.</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="night-sky-simulator" id="simulator">
+            <h2>Night Sky Simulator</h2>
+            <p>Adjust the settings to see how the night sky looks from your location at different times.</p>
+
+            <div class="simulator-controls">
+                <label for="time">Time of Night:</label>
+                <input type="range" id="time" min="0" max="100" value="50">
+
+                <label for="clouds">Cloud Coverage:</label>
+                <input type="range" id="clouds" min="0" max="100" value="20">
+            </div>
+
+            <div class="sky-canvas" id="sky-canvas">
+                <div class="celestial-body moon"></div>
+                <!-- Stars and constellations will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="events" id="events">
+            <h2 style="margin-bottom: 2rem; text-align: center; font-size: 2.2rem;">Upcoming Celestial Events</h2>
+            <div class="event-list">
+                <a onclick="document.getElementById('aug').showModal();" style="cursor: pointer;">
+                    <div class="event-card">
+                        <h3>Perseid Meteor Shower</h3>
+                        <div class="event-date">August 12-13,2025</div>
+                        <p>One of the most active meteor showers, producing up to 100 meteors per hour at its peak. Best
+                            viewed after midnight.</p>
+                    </div>
+                </a>
+                <a onclick="document.getElementById('may').showModal();" style="cursor: pointer;">
+                    <div class="event-card">
+                        <h3>Partial Lunar Eclipse</h3>
+                        <div class="event-date">May 16-17,2022</div>
+                        <p>A partial eclipse where the Earth's shadow covers a portion of the Moon. Visible from Europe,
+                            Africa, Asia, and Australia.</p>
+                    </div>
+                </a>
+                <a onclick="document.getElementById('june').showModal();" style="cursor: pointer;">
+                    <div class="event-card">
+                        <h3>Jupiter at Opposition</h3>
+                        <div class="event-date">june 3,2022</div>
+                        <p>Jupiter will be at its closest approach to Earth, making it brighter than any other time of
+                            the year.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Sky Gazing</div>
+            <p>Connecting earthlings to the cosmos since 2025 </p>
+            <div class="social-links" >
+                <a href="sitemap.html">Site map</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/groups/884918761852783/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.space.com/stargazing" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/popular/sky-gazing/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/eyesontheskydotcom" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 Sky Gazing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <dialog id="dialog">
+        <img src="moon phases.jpg" alt="" height="500px" width="500px">
+        <button onclick="document.getElementById('dialog').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="dialog-1">
+        <img src="guide.webp" alt="" height="500px" width="500px">
+        <button onclick="document.getElementById('dialog-1').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="dialog-2">
+        <img src="calender.jfif" alt="" height="500px" width="500px">
+        <button onclick="document.getElementById('dialog-2').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="aug">
+        <img src="shower.webp" alt="">
+        <button onclick="document.getElementById('aug').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="may">
+        <img src="lunar.webp" alt="">
+        <button onclick="document.getElementById('may').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <dialog id="june">
+        <img src="jupiter.jpg" alt="">
+        <button onclick="document.getElementById('june').close();" aria-label="close" class="x">❌</button>
+    </dialog>
+    <script>
+        // Create background stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars-container');
+            const starCount = 200;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                // Random properties for each star
+                const size = Math.random() * 3;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 5;
+
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.left = `${posX}%`;
+                star.style.top = `${posY}%`;
+                star.style.animationDelay = `${delay}s`;
+
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Create stars in the sky simulator
+        function createSkyStars() {
+            const skyCanvas = document.getElementById('sky-canvas');
+
+            // Clear existing stars (except the moon)
+            const stars = skyCanvas.querySelectorAll('.star-pattern, .constellation');
+            stars.forEach(star => star.remove());
+
+            // Add small stars
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star-pattern');
+
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+
+                star.style.left = `${posX}%`;
+                star.style.top = `${posY}%`;
+
+                skyCanvas.appendChild(star);
+            }
+
+            // Add a few brighter "constellation" stars
+            for (let i = 0; i < 15; i++) {
+                const star = document.createElement('div');
+                star.classList.add('constellation');
+
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const size = 4 + Math.random() * 4;
+
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.left = `${posX}%`;
+                star.style.top = `${posY}%`;
+
+                skyCanvas.appendChild(star);
+            }
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            createStars();
+            createSkyStars();
+
+            // Add event listeners for the simulator sliders
+            const timeSlider = document.getElementById('time');
+            const cloudsSlider = document.getElementById('clouds');
+            const skyCanvas = document.getElementById('sky-canvas');
+            const moon = document.querySelector('.moon');
+
+            timeSlider.addEventListener('input', function () {
+                // Change sky darkness based on time
+                const darkness = 100 - this.value;
+                skyCanvas.style.background = `linear-gradient(to bottom, 
+                    rgba(3, 6, 19, ${0.2 + darkness / 200}), 
+                    rgba(14, 26, 48, ${0.5 + darkness / 200}))`;
+
+                // Move moon across the sky
+                const moonX = 10 + (this.value / 100) * 70;
+                moon.style.left = `${moonX}%`;
+            });
+
+            cloudsSlider.addEventListener('input', function () {
+                // Add cloud coverage effect
+                const coverage = this.value / 100;
+                skyCanvas.style.boxShadow = `inset 0 0 ${100 * coverage}px rgba(255, 255, 255, ${0.1 * coverage})`;
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
